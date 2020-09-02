@@ -7,17 +7,17 @@ import Landing from './views/landing';
 
 class App extends React.PureComponent {
   componentDidMount() {
-    this.updateFavicon();
+    this.updateMeta();
   }
 
   componentDidUpdate() {
-    this.updateFavicon();
+    this.updateMeta();
   }
 
-  updateFavicon = () => {
-    // Update favicon from Redux cache.
-    const { favicon } = this.props;
+  updateMeta = () => {
+    const { favicon, name } = this.props;
     document.getElementById('favicon').href = favicon;
+    document.getElementsByTagName('title')[0].innerText = `${name} Superfans`;
   };
 
   render() {
@@ -34,7 +34,8 @@ class App extends React.PureComponent {
 }
 
 const mapStateToProps = (state) => ({
-  favicon: state.team?.favicon,
+  favicon: state.team?.strTeamBadge,
+  name: state.team?.strTeam,
 });
 
 export default connect(mapStateToProps)(App);

@@ -11,7 +11,11 @@ const MediaBanner = ({
   art3,
   art4,
 }) => {
-  const slides = [art1, art2, art3, art4].map((src) => ({ src, altText: '' }));
+  const slides = [art1, art2, art3, art4].map((src) => ({
+    src,
+    altText: '',
+    caption: '',
+  }));
 
   return (
     <Jumbotron className="w-100 p-0 m-0 position-absolute">

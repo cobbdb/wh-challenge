@@ -20,7 +20,7 @@ const StadiumDescription = ({ desc = '', thumb }) => {
             <span>{desc}</span>
             <Button color="link" size="sm" onClick={toggle} className="text-body">
               Less
-              <FontAwesomeIcon icon={faChevronUp} fullWidth className="ml-1" />
+              <FontAwesomeIcon icon={faChevronUp} fixedWidth className="ml-1" />
             </Button>
           </>
         ) : (
@@ -31,7 +31,7 @@ const StadiumDescription = ({ desc = '', thumb }) => {
             </span>
             <Button color="link" size="sm" onClick={toggle} className="text-body">
               Read More
-              <FontAwesomeIcon icon={faChevronDown} fullWidth className="ml-1" />
+              <FontAwesomeIcon icon={faChevronDown} fixedWidth className="ml-1" />
             </Button>
           </>
         )}
