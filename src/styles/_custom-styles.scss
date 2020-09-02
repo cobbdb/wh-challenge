@@ -1,0 +1,29 @@
+@import 'custom/jumbotron';
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-grad {
+  background: rgb(253,26,35);
+  background: linear-gradient(90deg, rgba(253,26,35,1) 70%, rgba(13,45,130,1) 100%);
+}
+
+.text-lg { font-size: 3rem }
+
+.bkg-center { background-position: center }
+.bkg-norepeat { background-repeat: no-repeat }
+.bkg-cover {
+  @extend .bkg-norepeat;
+  background-size: cover;
+}
+.bkg-contain {
+  @extend .bkg-norepeat;
+  background-size: contain;
+}
+
+.header { height: 6rem }
+.footer-logo { height: 4rem }
+.rg-badge { width: 2rem }

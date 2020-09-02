@@ -1,0 +1,55 @@
+$enable-transitions: false;
+
+$border-radius: 0.1rem;
+$border-radius-lg: 0.15rem;
+$border-radius-sm: 0.05rem;
+
+$primary: #fd1a23;
+$secondary: #0d2d82;
+$warning: #f3c51f;
+$info: #c3efee;
+$danger: #e57373;
+$light: #edf1fc;
+$dark: #303a81;
+$darker: #2b3672;
+$black: #000;
+$white: #fff;
+$sky: #197ee3;
+$lightblue: #f4feff;
+$gray: #767676;
+$lightgray: #ececec;
+$lightergray: #f5f5f5;
+$smokygray: #7e7e7e;
+$darkgray: #aeaeae;
+$clear: transparent;
+$lightred: #efb5b5;
+$lightgreen: #e7f5dc;
+
+$theme-colors: (
+  darker: $darker,
+  black: $black,
+  white: $white,
+  sky: $sky,
+  lightblue: $lightblue,
+  gray: $gray,
+  lightgray: $lightgray,
+  lightergray: $lightergray,
+  smokygray: $smokygray,
+  darkgray: $darkgray,
+  clear: $clear,
+  lightred: $lightred,
+  lightgreen: $lightgreen,
+);
+
+$link-color: #79b2e7;
+$border-color: #dedede;
+
+$container-max-widths: (
+  xl: 960px,
+);
+
+$spacers: (
+  6: 6rem,
+  7: 12rem,
+  8: 22rem,
+);
